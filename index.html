@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pagina Principal</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    </head>
+
+    <body>
+        <!--encabezado de la pagina-->
+        <header class="header">
+            <h1>Presencia por edificios</h1>
+        </header>
+        <main class="container">
+            <!--estado de conexion y mensajes-->
+            <section id="seccion-mensajes">
+                <p id="estado-servidor">Conectando con el servidor...</p>
+                <div id="mensajes" role="status" aria-live="polite"></div>
+            </section>
+
+            <!--seccion donde se visualiza el mapa-->
+            <section id="seccion-mapa">
+                <h2>Mapa de edificios</h2>
+
+                <p id="instruccion-mapa">Selecciona un punto del mapa para registrar un edificio.</p>
+
+                <label for="nombre-edificio">Nombre del edificio</label>
+                <input
+                    type="text"
+                    id="nombre-edificio"
+                    placeholder="Ej. Edificio A"
+                    pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ0-9\s]+$"
+                    title="El nombre del edificio solo puede contener letras, números y espacios"
+                    required
+                />
+
+                <button type="button" id="btn-registrar-edificio">Registrar edificio seleccionado</button>
+
+                <div id="mapa" aria-label="Mapa de la universidad"></div>
+            </section>
+
+            <section id="seccion-eliminar_edificio">
+                <h2>Eliminar un edificio</h2>
+
+                <label for="edificio-eliminar">Selecciona un edificio para eliminarlo</label>
+                <select id="edificio-eliminar">
+                    <option value="">Selecciona un edificio</option>
+                </select>
+
+                <button type="button" id="btn-eliminar-edificio">Eliminar edificio seleccionado</button>
+            </section>
+
+            <section id="seccion-registro">
+                <h2>Registrar mi presencia</h2>
+
+                <form id="form-presencia">
+                    <label for="nombre-persona">Nombre de la persona</label>
+                    <input
+                        type="text"
+                        id="nombre-persona"
+                        placeholder="Ej. Juan Pérez"
+                        pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ0-9\s]+$"
+                        title="El nombre solo puede contener letras y espacios"
+                        required
+                    />
+
+                    <label for="edificio-persona">Edificio donde me encuentro</label>
+                    <select id="edificio-persona" required>
+                        <option value="">Selecciona un edificio</option>
+                    </select>
+
+                    <button type="submit" id="btn-registrar-presencia">Registrar presencia</button>
+                </form>
+
+                <button type="button" id="btn-salir">Salir y eliminar mi registro</button>
+            </section>
+
+            <section id="seccion-personas">
+                <h2>Personas en la universidad</h2>
+
+                <label for="filtro-edificio">Filtrar por edificio</label>
+                <select id="filtro-edificio">
+                    <option value="">Todos los edificios</option>
+                </select>
+
+                <p>
+                    URL consultada:
+                    <code id="url-consultada"></code>
+                </p>
+
+                <p id="estado-carga"></p>
+
+                <div class="tabla-contenedor">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Edificio</th>
+                                <th>Última conexión</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tabla-personas"></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">Proyecto de programación para Internet</footer>
+        <script type="module" src="scripts/script.js"></script>
+    </body>
+</html>

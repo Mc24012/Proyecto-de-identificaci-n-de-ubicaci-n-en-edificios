@@ -1,0 +1,97 @@
+{
+  "buildings": [
+    {
+      "name": "Cafetin la margarita ",
+      "lat": 13.440095162539713,
+      "lng": -88.15758409193548,
+      "id": "cJ-37nqTtrU"
+    },
+    {
+      "name": "Edificio de Medicina 1",
+      "lat": 13.439350395116367,
+      "lng": -88.15947553424097,
+      "id": "uwzsA_O2MSc"
+    },
+    {
+      "name": "Edificio de Medicina 2",
+      "lat": 13.4393524821727,
+      "lng": -88.15993671377146,
+      "id": "aI_KyY-seQo"
+    },
+    {
+      "name": "Biblioteca",
+      "lat": 13.44039621242494,
+      "lng": -88.15844998843664,
+      "id": "ItGH_dWUHb8"
+    },
+    {
+      "name": "Parqueo del riñon",
+      "lat": 13.439554310106354,
+      "lng": -88.15821343925337,
+      "id": "KxE3pNPOzy0"
+    },
+    {
+      "name": "Cafetin de la gatita Marisol",
+      "lat": 13.440054694269504,
+      "lng": -88.15775775935175,
+      "id": "hJdioOX7T5E"
+    },
+    {
+      "name": "Aula número 20",
+      "lat": 13.438910070090717,
+      "lng": -88.1581598298532,
+      "id": "wpWehfFMlfQ"
+    },
+    {
+      "name": "Matadero",
+      "lat": 13.439605988326242,
+      "lng": -88.15742002013056,
+      "id": "PoPmvVH2bW8"
+    }
+  ],
+  "people": [
+    {
+      "name": "La gatita Marisol",
+      "buildingId": "cJ-37nqTtrU",
+      "lastSeen": "2026-10-22T00:28:37.387Z",
+      "id": "hJdioOX7T5E"
+    },
+    {
+      "name": "Joaquin",
+      "buildingId": "uwzsA_O2MSc",
+      "lastSeen": "2026-10-22T00:28:37.387Z",
+      "id": "jBR_b2kqU2s"
+    },
+    {
+      "name": "Juan",
+      "buildingId": "uwzsA_O2MSc",
+      "lastSeen": "2026-10-25T00:28:37.387Z",
+      "id": "jBR_b2kqU2s"
+    },
+    {
+      "name": "Luis",
+      "buildingId": "uwzsA_O2MSc",
+      "lastSeen": "2026-10-25T03:55:00.272Z",
+      "id": "iMHHcZjBkfw"
+    },
+    {
+      "name": "Fran",
+      "buildingId": "cJ-37nqTtrU",
+      "lastSeen": "2026-10-25T00:27:37.480Z",
+      "id": "9milCYS1Hm8"
+    },
+    {
+      "name": "Carlos telefono",
+      "buildingId": "hJdioOX7T5E",
+      "lastSeen": "2026-10-26T01:52:41.636Z",
+      "id": "ItJlC0WAaSY"
+    },
+    {
+      "name": "Gatita tres colores",
+      "buildingId": "hJdioOX7T5E",
+      "lastSeen": "2026-10-26T01:38:03.388Z",
+      "id": "R3OaJOKj9e0"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
