@@ -1,4 +1,4 @@
-export const API_URL = "http://192.168.1.14:3000";
+export const API_URL = window.location.hostname;
 
 export const STORAGE_PERSONA_ID = "personaId";
 export const STORAGE_FILTRO = "filtroEdificio";
